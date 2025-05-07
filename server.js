@@ -4,7 +4,7 @@ const db = require('./config/db.js');
 const bodyParser = require('body-parser');
 const app = express();
 require("dotenv").config();
-const DB_PORT = process.env.DB_PORT || 3306;
+const DB_PORT = process.env.DB_PORT || 5050;
 
 // const { syncModels } = require("./models/index.js");
 // syncModels();

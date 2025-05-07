@@ -266,10 +266,10 @@ const promoteAMsToDM = async () => {
 };
 
 //Demotion of the ccm after 15 days if it is unable to make 10 DM's Under it...
-cron.schedule("* * * * *", demoteCCMsAfter15Days);
+// cron.schedule("* * * * *", demoteCCMsAfter15Days);
 
 // // This cron runs every day at midnight
-cron.schedule("* * * * *", promoteAMsToDM);
+cron.schedule("0 0 * * *", promoteAMsToDM);
 
 // 🔁 Schedule to run every day at midnight
-cron.schedule("* * * * *", promoteDMsToCCM);
+cron.schedule("55 23 * * *", promoteDMsToCCM);

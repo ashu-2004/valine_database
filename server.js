@@ -37,5 +37,5 @@ app.use((req, res, next) => {
 });
 
 app.listen(DB_PORT, () => {
-    console.log('Server is running on the port 5050');
+    console.log('Server is running on port 5050');
 });

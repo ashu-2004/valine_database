@@ -4,7 +4,7 @@ const db = require('./config/db.js');
 const bodyParser = require('body-parser');
 const app = express();
 require("dotenv").config();
-const DB_PORT = process.env.DB_PORT || 8080;
+const DB_PORT = process.env.DB_PORT || 5050;
 
 // const { syncModels } = require("./models/index.js");
 // syncModels();
@@ -37,5 +37,5 @@ app.use((req, res, next) => {
 });
 
 app.listen(DB_PORT, () => {
-    console.log('Server is running on the port 8080');
+    console.log('Server is running on the port 5050');
 });

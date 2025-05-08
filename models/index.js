@@ -20,5 +20,5 @@ const syncModels = async () => {
   }
 };
 
-// module.exports = { sequelize, Admin,CCM,DM,AM,Products,Tracker,PaymentHistory, syncModels };
-module.exports = { sequelize, Products, syncModels };
+module.exports = { sequelize, Admin,CCM,DM,AM,Products,Tracker,PaymentHistory, syncModels };
+// module.exports = { sequelize, Products, syncModels };

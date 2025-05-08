@@ -6,8 +6,8 @@ const app = express();
 require("dotenv").config();
 const DB_PORT = process.env.DB_PORT || 3306;
 
-// const { syncModels } = require("./models/index.js");
-// syncModels();
+const { syncModels } = require("./models/index.js");
+syncModels();
 
 app.use(cors(
     {
